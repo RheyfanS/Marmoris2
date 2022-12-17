@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmoris</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9162485125.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+    <! logo icon>
+    <a href="#" class="logo">
+        <img src="gambar/logomarmoris.png" alt="">
+    </a>
+    <div class="nama">Màrmoris</div>
+    
+
+
+    <nav class="navbar"> <!--ini buat isi dari navbar-->
+        <a href="#home">home</a>
+        <a href="#menu">Venue</a>
+        <a href="#products">Our product</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#about">About</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons"> <!--ini buat icon search button-->
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form"> <!--ini buat seacrh barnya-->
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <!--list item yang ada di your cart-item-->
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="gambar/pija.jpg" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="gambar/pija.jpg" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="gambar/pija.jpg" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="gambar/pija.jpg" alt="">
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">Check Out</a>
+        <a href="#" class="btn">lihat detail</a>
+    </div>
+    <!--list selesai-->
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <!kata-katanya>
+    <div class="content">
+        <h3>When your <br> dream come true </h3>
+        <p>"We make your wedding memorable"</p>
+        <a href="#" class="btn">get yours now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> <span>Venue</span> </h1> <!--huruf venue-->
+
+    <div class="box-container">
+
+        <div class="box"> <!--list item buat tempat yang ada di venue-->
+            <img src="gambar/venue1.jpg" alt="">
+            <h3>best place</h3>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <div class="price">Rp 1.000.000 <span>Rp 1.200.000</span></div>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> Jawa Barat, bandung</span></i>
+            </div>            
+            <a href="#" class="btn">Visit</a>
+        </div>
+
+        <div class="box">
+            <img src="gambar/venue2.jpg" alt="">
+            <h3>best place</h3>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <div class="price">Rp1.500.000 <span>Rp2.000.000</span></div>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> DKI Jakarta, Jakarta</span></i>
+            </div>            
+            <a href="#" class="btn">Visit</a>
+        </div>
+
+        <div class="box">
+            <img src="gambar/venue3.jpg" alt="">
+            <h3>best place</h3>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="price">Rp2.500.000 <span>Rp3.000.000</span></div>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> Jawa Barat, Bogor</span></i>
+            </div>            
+            <a href="#" class="btn">Visit</a>
+        </div>
+
+        <div class="box">
+            <img src="gambar/venue4.jpg" alt="">
+            <h3>best place</h3>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div class="price">Rp3.000.000 <span>Rp4.000.000</span></div>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> DIY, Jogja</span></i>
+            </div>            
+            <a href="#" class="btn">Visit</a>
+        </div>
+
+        <div class="box">
+            <img src="gambar/venue5.jpeg" alt="">
+            <h3>best place</h3>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div class="price">Rp400.000 <span>Rp600.000</span></div>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> Sumatera barat, Padang</span></i>
+            </div> 
+                       
+            <a href="#" class="btn">Visit</a>
+        </div>
+
+        <div class="box">
+            <img src="gambar/venue6.jpg" alt="">
+            <h3>best place</h3>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            
+            <div class="price">Rp1.800.000 <span>Rp2.000.000</span></div>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> Sumatera Utara, Medan</span></i>
+            </div>            
+            <a href="#" class="btn">Visit</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<section class="products" id="products">
+    <!--menampilkan produk-->
+    <h1 class="heading"> <span>our</span> <span>products</span> </h1>
+
+    <div class="box-container">
+        <!--menampilkan produk yang kita punya-->
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="gambar/pija.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>gatau mau isi apa</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="gambar/pija.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>gatau mau isi apa</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="gambar/pija.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>gatau isi apa</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="gambar/giyat.jpg" class="user" alt="">
+            <p>WO nya keren,asik,murah,dan bener bener wah deh,jadi pengen nikah trus-trus an</p>
+            <h3>Ghiyat</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="gambar/sam.jpeg" class="user" alt="">
+           
+            <p>WO nya keren rapih salut dah pokonya</p>
+            <h3>Syamaidzar</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="gambar/nia.png" class="user" alt="">
+            <p>Im happy now</p>
+            <h3>Nia</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact us </h1>
+
+    <div class="row">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.307454333128!2d107.62949135028275!3d-6.973006994937771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adf177bf8d%3A0x437398556f9fa03!2sUniversitas%20Telkom!5e0!3m2!1sid!2sid!4v1667568139580!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="">
+            <h3>Connect with us</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"><span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="gambar/orang.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Belum tau</a>
+                <span>by Pari / 11 November, 2022</span>
+                <p>idk bro.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="gambar/orang.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Belum tau</a>
+                <span>by Pari / 11 November, 2022</span>
+                <p>idk bro.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="gambar/orang.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Belum tau</a>
+                <span>by Pari / 11 November, 2022</span>
+                <p>idk bro.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="gambar/about.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Please choose us we needd money, pls?</h3>
+            <p>we need money <br> pls?</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-instagram"></a>
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-linkedin"></a>
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#home">home</a>
+        <a href="#menu">Venue</a>
+        <a href="#products">Our product</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#about">About</a>
+        <a href="#blogs">blogs</a>
+    </div>
+
+    <div class="credit">dibuat oleh <span> Kelompok 2 </span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
