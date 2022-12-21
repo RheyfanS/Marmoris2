@@ -18,7 +18,6 @@ db.on('open',()=>{
     console.log("Database Connect")
 })
 
-
 app.set('view engine','ejs')
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))
