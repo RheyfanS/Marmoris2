@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 :root{
     --main-color:#FF477E;
     --black:#E8E8E8; 
@@ -9,8 +9,7 @@
 
 *{
     font-family: 'poppins';
-    margin:0; 
-    padding:0;
+
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
@@ -40,11 +39,15 @@ html::-webkit-scrollbar-thumb{
 
 body{
     background: var(--bg);
+    background: url(../gambar/background.jpg) fixed no-repeat;
+    background-size: cover;
 }
 
 section{
     padding:2rem 7%;
 }
+
+
 
 .heading{
     text-align: center;
@@ -91,6 +94,9 @@ section{
 
 .header .logo img{
     height: 6rem;
+}
+.navbar{
+    padding-right: 150px;
 }
 
 .header .navbar a{
@@ -214,14 +220,14 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../gambar/ryujin.jpg) fixed no-repeat;
+    background:url(../gambar/happy.jpg) fixed no-repeat;
     background-size: fill;
     background-color: #EAEAEA;
     background-position: right;
 }
 
 .home .content{
-    max-width: 60rem;
+    max-width: 50rem;
 }
 
 .home .content h3{
@@ -275,8 +281,7 @@ section{
     padding:1rem 0;
     line-height: 1.8;
 }
-
-.menu .box-container .stars i{
+.stars i{
     font-size: 18px;
     color: gold;   
 }
@@ -293,13 +298,14 @@ section{
 }
 
 .menu .box-container .box img{ /*buat ngukur ukuran gambar dari foto di section Venue*/
-    height: 200px;
-    width: 300px;
+    max-height: 200px;
+    max-width: 300px;
     
     
 }
 .location { /*ukuran font lokasi venue*/
     font-size: 15px;
+    margin-top: 10px;
 }
 
 .menu .box-container .box h3{
@@ -328,68 +334,11 @@ section{
     color:black;
 }
 
-.products .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+.cartimg{
+    width: 200px;
 }
 
-.products .box-container .box{
-    text-align: center;
-    padding: 2rem;
-}
 
-.products .box{
-    background-color: var(--black);
-    border: var(--border);
-}
-
-.products .box-container .box .icons a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    border:var(--border);
-    color: brown;
-    margin:.3rem;
-}
-
-.products .box-container .box .icons a:hover{
-    background:var(--main-color);
-}
-
-.products .box-container .box .image{
-    padding: 2.5rem 0;
-}
-
-.products .box-container .box .image img{
-    height: 25rem;
-}
-
-.products .box-container .box .content h3{
-    color:black;
-    font-size: 2.5rem;
-}
-
-.products .box-container .box .content .stars{
-    padding: 1.5rem;
-}
-
-.products .box-container .box .content .stars i{
-    font-size: 1.7rem;
-    color: gold
-}
-
-.products .box-container .box .content .price{
-    color:black;
-    font-size: 2.5rem;
-}
-
-.products .box-container .box .content .price span{
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
 
 .review .box-container{
     display: grid;
@@ -436,7 +385,6 @@ section{
 }
 
 .contact .row .map{
-    flex:1 1 45rem;
     width: 100%;
     object-fit: cover;
 }
@@ -534,6 +482,7 @@ section{
 .footer{
     background: grey;
     text-align: center;
+    size-adjust: 100%;
 }
 
 .footer .share{
@@ -587,10 +536,187 @@ section{
     color:black;
     ;
 }
+
 .box-1{
     height: 850px;
     background-size: fill;
 }
+
+.cart-box{
+    width:26% !important;
+    position: absolute;
+    left:72%;
+    top:25%;
+    /* border:solid 1px blue; */
+    padding:10px 20px;
+    
+}
+
+
+.cart-wrapper{
+    overflow-y: auto;
+    max-height: 350px;
+    width:24vw;
+}
+.subtotal{
+    text-align: right;
+    padding:5%;
+    font-size: 22px;
+}
+.checkout, .view-cart{
+    width:95%;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--main-color);
+    font-size: large;
+    color: #fff;
+    margin:10px auto;
+    padding:10px 15px;
+}
+.view-cart{
+    background-color: #fff;
+    border: 2px solid brown;
+    color: brown;
+}
+.cart-icon{
+    display: flex;
+    text-align: center;
+    padding-left: 200px;
+    gap: 12rem;
+}
+
+.cart-box .cart-icon{
+    max-width: 200px;
+    max-height: 400px;
+    padding-left: 180px;
+}
+
+.cart-icon a{
+    display: grid;
+    color: black;
+}
+
+
+
+
+
+
+.cart-item{
+  display:grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  padding:5% 2%;
+  border-bottom:solid 1px lightgray;  
+  
+}
+
+.cart-item img{
+    width:100%;
+}
+.cart-item .details{
+    padding-left:10%;
+    font-size: 15px;
+}
+
+.cart-item h3{
+  text-align: left; 
+  margin-bottom:5%; 
+  
+}
+
+.cart-item .price{
+display: block;
+text-align: right;
+margin-top: 35%; 
+}
+  
+ .quantity{
+     display: block;
+     margin-top:5%;
+ } 
+
+ .fa-window-close{
+     color: red;
+ }
+ .cancel{
+     text-align: right;
+ }
+ .whole-cart-window{
+     border: solid lightgray 1px;
+     border-top:none;
+     position: fixed;
+     top:12vh;
+     background-color: #fff;
+     margin-right:2%;
+ }
+
+ .hide{
+     display: none;
+ }
+.non-empty::after{
+  content: var(--after-content);
+  font-size: 19px;
+  width:25px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top:-27px;
+  right:10%;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    height:400px;
+    justify-content: center;
+    align-items: center;
+}
+.card-item img{
+    width:50%;
+}
+.details{
+    font-size: 20px;
+}
+.card-item .details{
+    text-align: center;    
+}
+.card-item p,.card-item h3 {
+    margin-top:10px;   
+}
+.card-item span{
+    display: block;
+    margin-top:10px;
+}
+.add-to-cart-btn{
+    width: fit-content;
+    margin:auto;
+    /* margin-top:10px; */
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    border-radius: 3px;
+    font-size: large;
+    color:#fff
+}
+
+.products{
+    display:flexbox;
+}
+
+.shop-section{
+    margin: auto;
+}
+
+
+
 
 
 
@@ -613,7 +739,7 @@ section{
         font-size: 55%;
     }
 
-    .header{
+    .header {
         padding:1.5rem 2rem;
     }
 
@@ -621,12 +747,14 @@ section{
         padding:2rem;
     }
 
+
 }
 
 @media (max-width:768px){
 
     #menu-btn{
         display: inline-block;
+        
     }
 
     .header .navbar{
@@ -677,3 +805,14 @@ section{
     }
 
 }
+
+@media  (max-width:500px){
+
+    .nama{
+        padding-left: 120px;
+    }
+    
+}
+
+
+

@@ -1,3 +1,4 @@
+const { MinKey } = require('mongodb');
 const mongoose = require('mongoose');
 const schema = mongoose.Schema;
 const userSchema = new schema({
@@ -16,7 +17,7 @@ const userSchema = new schema({
     },
     password: {
         type: String,
-        required:true
+        required:true,
     }
 })
 
