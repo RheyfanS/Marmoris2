@@ -17,17 +17,15 @@
 <body>
     
 <!-- header section starts  -->
-
 <header class="header">
     <! logo icon>
     <a href="#" class="logo">
-        <img src="gambar/logomarmoris.png" alt="">
+        <img src="gambar/banteng.png" alt="">
     </a>
     <div class="nama">Màrmoris</div>
-    
 
-
-    <nav class="navbar"> <!--ini buat isi dari navbar-->
+    <!--ini buat isi dari navbar-->
+    <nav class="navbar"> 
         <a href="#home">home</a>
         <a href="#menu">Venue</a>
         <a href="#products">Our product</a>
@@ -35,59 +33,34 @@
         <a href="#contact">contact</a>
         <a href="#about">About</a>
         <a href="#blogs">blogs</a>
+        <!-- item in cart-->  
+        <div class="cart-box">    
+            <div class="cart-icon">
+              <i class="fas fa-shopping-cart fa-3x"></i> 
+            </div>
+            <div class="whole-cart-window hide">
+              <div class="cart-wrapper">
+              </div>
+              <div class="subtotal">Subtotal: $0.00</div>
+              <div class="checkout">Checkout</div>
+            </div>
+          </div>
+          <form method="POST" action="/logout?_method=DELETE" class="btn" >
+            <button>Logout</button>
+         </form>
+          <!-- item in cart-->
     </nav>
+    
 
     <div class="icons"> <!--ini buat icon search button-->
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="" id="search-btn"></div>
+        <div class="" id="cart-btn"></div>
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
-    <div class="search-form"> <!--ini buat seacrh barnya-->
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>
-
-    <!--list item yang ada di your cart-item-->
-    <div class="cart-items-container">
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="gambar/pija.jpg" alt="">
-            <div class="content">
-                <h3>cart item 01</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="gambar/pija.jpg" alt="">
-            <div class="content">
-                <h3>cart item 02</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="gambar/pija.jpg" alt="">
-            <div class="content">
-                <h3>cart item 03</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="gambar/pija.jpg" alt="">
-            <div class="content">
-                <h3>cart item 04</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <a href="#" class="btn">Check Out</a>
-        <a href="#" class="btn">lihat detail</a>
-    </div>
-    <!--list selesai-->
-
 </header>
+
+
 
 <!-- header section ends -->
 
@@ -97,8 +70,7 @@
     <!kata-katanya>
     <div class="content">
         <h3>When your <br> dream come true </h3>
-        <p>"We make your wedding memorable"</p>
-        <a href="#" class="btn">get yours now</a>
+        <p>"And Make Your Wedding Memorable"</p>
     </div>
 
 </section>
@@ -113,10 +85,9 @@
 
     <div class="box-container">
 
-        <div class="box"> <!--list item buat tempat yang ada di venue-->
-            <img src="gambar/venue1.jpg" alt="">
-            <h3>best place</h3>
-
+        <div class="box">
+            <img src="gambar/gambar venue/mainvenue1.jpg"">
+            <h3>Marriot Bali Nusa Dua</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -125,54 +96,16 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
 
-            <div class="price">Rp 1.000.000 <span>Rp 1.200.000</span></div>
+
             <div class="location">
-                <i class="fa-solid fa-location-dot"> <span> Jawa Barat, bandung</span></i>
+                <i class="fa-solid fa-location-dot"> <span> Denpasar, Bali</span></i>
             </div>            
-            <a href="#" class="btn">Visit</a>
+            <a href="/visit1" class="btn">About this</a>
         </div>
 
         <div class="box">
-            <img src="gambar/venue2.jpg" alt="">
-            <h3>best place</h3>
-
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-
-            <div class="price">Rp1.500.000 <span>Rp2.000.000</span></div>
-            <div class="location">
-                <i class="fa-solid fa-location-dot"> <span> DKI Jakarta, Jakarta</span></i>
-            </div>            
-            <a href="#" class="btn">Visit</a>
-        </div>
-
-        <div class="box">
-            <img src="gambar/venue3.jpg" alt="">
-            <h3>best place</h3>
-
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-
-            <div class="price">Rp2.500.000 <span>Rp3.000.000</span></div>
-            <div class="location">
-                <i class="fa-solid fa-location-dot"> <span> Jawa Barat, Bogor</span></i>
-            </div>            
-            <a href="#" class="btn">Visit</a>
-        </div>
-
-        <div class="box">
-            <img src="gambar/venue4.jpg" alt="">
-            <h3>best place</h3>
+            <img src="gambar/gambar venue paket/paket2/mainvenue2.jpg" alt="">
+            <h3>Grand Savero Hotel</h3>
 
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -182,16 +115,16 @@
                 <i class="fas fa-star"></i>
             </div>
 
-            <div class="price">Rp3.000.000 <span>Rp4.000.000</span></div>
+
             <div class="location">
-                <i class="fa-solid fa-location-dot"> <span> DIY, Jogja</span></i>
+                <i class="fa-solid fa-location-dot"> <span> Kota Bogor, Jawa Barat</span></i>
             </div>            
-            <a href="#" class="btn">Visit</a>
+            <a href="/visit2" class="btn">About this</a>
         </div>
 
         <div class="box">
-            <img src="gambar/venue5.jpeg" alt="">
-            <h3>best place</h3>
+            <img src="gambar/gambar venue paket/paket3/mainvenue3.jpg" alt="">
+            <h3>DoubleTree by Hilton Hotel</h3>
 
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -199,35 +132,14 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
             </div>
 
-            <div class="price">Rp400.000 <span>Rp600.000</span></div>
             <div class="location">
-                <i class="fa-solid fa-location-dot"> <span> Sumatera barat, Padang</span></i>
-            </div> 
-                       
-            <a href="#" class="btn">Visit</a>
-        </div>
-
-        <div class="box">
-            <img src="gambar/venue6.jpg" alt="">
-            <h3>best place</h3>
-
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-            
-            <div class="price">Rp1.800.000 <span>Rp2.000.000</span></div>
-            <div class="location">
-                <i class="fa-solid fa-location-dot"> <span> Sumatera Utara, Medan</span></i>
+                <i class="fa-solid fa-location-dot"> <span> Jakarta Pusat, DKI Jakarta</span></i>
             </div>            
-            <a href="#" class="btn">Visit</a>
+            <a href="/visit3" class="btn">About this</a>
         </div>
+
 
     </div>
 
@@ -235,79 +147,83 @@
 
 <!-- menu section ends -->
 
+
+<!-- our product -->
 <section class="products" id="products">
+    <h1 class="heading"> <span>Our Product</span> </h1>
     <!--menampilkan produk-->
-    <h1 class="heading"> <span>our</span> <span>products</span> </h1>
-
-    <div class="box-container">
-        <!--menampilkan produk yang kita punya-->
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="gambar/pija.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>gatau mau isi apa</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
+  <section class="shop-section">
+    <div class="card-wrapper">
+      <div data-id="1" class="card-item">
+        <img src="gambar/gambar venue/mainvenue1.jpg" />
+        <div class="details">
+          <h3>paket bronze</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
         </div>
+          <p>
+            <span>
+                Paket Bronze
+            </span>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="gambar/pija.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>gatau mau isi apa</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
+            <span class="price">Price: $6416</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
         </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="gambar/pija.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>gatau isi apa</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
+      </div>
+      <!-- item 2 -->
+      <div data-id="2" class="card-item">
+        <img src="gambar/gambar venue paket/paket2/mainvenue2.jpg" />
+        <div class="details">
+          <h3>paket silver</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
         </div>
+          <p>
+            <span>
+              Paket Silver
+            </span>
 
+            <span class="price">Price: $11870</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div data-id="3" class="card-item">
+        <img src="gambar/gambar venue paket/paket3/mainvenue3.jpg" />
+        <div class="details">
+          <h3>paket gold</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+          <p>
+            <span>
+              Paket Gold
+            </span>
+            <span class="price">Price: $14629</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
+        </div>
+      </div>
     </div>
+
+ 
+
+
+
 
 </section>
 
@@ -320,7 +236,7 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="gambar/giyat.jpg" class="user" alt="">
+            <img src="gambar/gambar reviewer/giyat.jpg" class="user" alt="">
             <p>WO nya keren,asik,murah,dan bener bener wah deh,jadi pengen nikah trus-trus an</p>
             <h3>Ghiyat</h3>
             <div class="stars">
@@ -333,7 +249,7 @@
         </div>
 
         <div class="box">
-            <img src="gambar/sam.jpeg" class="user" alt="">
+            <img src="gambar/gambar reviewer/sam.jpeg" class="user" alt="">
            
             <p>WO nya keren rapih salut dah pokonya</p>
             <h3>Syamaidzar</h3>
@@ -347,7 +263,7 @@
         </div>
         
         <div class="box">
-            <img src="gambar/nia.png" class="user" alt="">
+            <img src="gambar/gambar reviewer/nia.png" class="user" alt="">
             <p>Im happy now</p>
             <h3>Nia</h3>
             <div class="stars">
@@ -369,28 +285,12 @@
 
 <section class="contact" id="contact">
 
-    <h1 class="heading"> <span>contact us </h1>
+    <h1 class="heading"> <span>Our Office </h1>
 
     <div class="row">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.307454333128!2d107.62949135028275!3d-6.973006994937771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adf177bf8d%3A0x437398556f9fa03!2sUniversitas%20Telkom!5e0!3m2!1sid!2sid!4v1667568139580!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.307454333128!2d107.62949135028275!3d-6.973006994937771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adf177bf8d%3A0x437398556f9fa03!2sUniversitas%20Telkom!5e0!3m2!1sid!2sid!4v1667568139580!5m2!1sid!2sid" width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <form action="">
-            <h3>Connect with us</h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="name">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
-            </div>
-            <input type="submit" value="contact now" class="btn">
-        </form>
 
     </div>
 
@@ -408,37 +308,37 @@
 
         <div class="box">
             <div class="image">
-                <img src="gambar/orang.jpg" alt="">
+                <img src="gambar/gambarblog/1.jpg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">Belum tau</a>
-                <span>by Pari / 11 November, 2022</span>
-                <p>idk bro.</p>
-                <a href="#" class="btn">read more</a>
+                <a href="#" class="title">6 Cara Memilih Pasangan Hidup yang Tepat Sebelum Menikah</a>
+                <span>by Gayuh Tri Pinjungwati / 22 Okt 2021</span>
+                <p>Kehadiran seseorang dalam hidup memang dinanti-nanti setiap orang. Kamu mendambakan sosok yang bisa menyemangatimu di saat menangis dan yang mengerti kamu. Cinta adalah ikatan yang menghubungkan kita dengan orang yang tepat, tetapi menemukan pasangan hidup bisa sangat sulit.</p>
+                <a href="https://www.fimela.com/relationship/read/4689865/6-cara-memilih-pasangan-hidup-yang-tepat-sebelum-menikah" class="btn">read more</a>
             </div>
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="gambar/orang.jpg" alt="">
+                <img src="gambar/gambarblog/2.jpeg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">Belum tau</a>
-                <span>by Pari / 11 November, 2022</span>
-                <p>idk bro.</p>
-                <a href="#" class="btn">read more</a>
+                <a href="#" class="title">Pernikahan Fantastis Gadis di Pinrang, Panai Rp 5 M-Datangkan 7 Artis</a>
+                <span>by detikSulsel / 01 Agu 2022</span>
+                <p>Pernikahan dengan mahar fantastis kembali terjadi di Sulawesi Selatan (Sulsel). Kali ini gadis Bugis asal Kabupaten Pinrang dilamar dengan panai hingga Rp 5 miliar dan mendatangkan 7 artis ibukota dalam resepsi pernikahan</p>
+                <a href="https://www.detik.com/sulsel/berita/d-6209434/pernikahan-fantastis-gadis-di-pinrang-panai-rp-5-m-datangkan-7-artis" class="btn">read more</a>
             </div>
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="gambar/orang.jpg" alt="">
+                <img src="gambar/gambarblog/3.jpg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">Belum tau</a>
-                <span>by Pari / 11 November, 2022</span>
-                <p>idk bro.</p>
-                <a href="#" class="btn">read more</a>
+                <a href="#" class="title">10 Cara & Tips Memilih Baju Pengantin yang Pas Buat Kamu!</a>
+                <span>by Aini Dian / March 1, 2021</span>
+                <p>Pernikahan merupakan salah satu momen penting di dalam hidup. Pastinya setiap orang menginginkan pernikahan hanya sekali seumur hidup. Momen sakral ini biasanya dipersiapkan dengan matang, salah satunya adalah menyiapkan gaun yang cocok dengan pengantin.</p>
+                <a href="https://mamapapa.id/cara-memilih-baju-pernikahan/" class="btn">read more</a>
             </div>
         </div>
 
