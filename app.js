@@ -5,7 +5,6 @@ const homeRouter = require('./routes/homeRoutes')
 const port = process.env.port || 8008;
 const app = express();
 const session = require('express-session')
-const methodOverride = require('method-override')
 
 //db connect
 mongoose.connect('mongodb://127.0.0.1:27017/Marmoris',{useNewUrlParser:true})

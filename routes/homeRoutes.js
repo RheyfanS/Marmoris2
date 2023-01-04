@@ -12,11 +12,11 @@ Router.use(session({
 Router.use(methodOverride('_method'))
 
 Router.get('/',(err,res) => {
-    res.render('login', {title: '', password:'',email:''})
+    res.render('login', {title: ''})
 })
 
 Router.get('/login', (req,res) => {
-    res.render('login', {title: '', password:'',email:''})
+    res.render('login', {title: ''})
 })
 
 Router.get('/home',(req, res) => {
@@ -35,12 +35,16 @@ Router.get('/visit3',(req, res) => {
     res.render('visit3')
 })
 
+Router.get('/checkout', (req,res) => {
+    res.render('checkout')
+})
+
 Router.delete('/logout', (req, res) => {
     req.session.destroy();
     res.redirect('/login')
 })
 
-
+// Register
 Router.post('/register', async(req,res) => {
     try{
         const {
@@ -60,31 +64,31 @@ Router.post('/register', async(req,res) => {
             })
             userData.save(err =>{
                 if(err){
-                    console.log("err")
+                    console.log("User Wrong Input")
                 }else{
-                    res.render('login', {title: 'Done', password:'',email:''})
+                    res.render('login', {title: 'Done'})
                 }
             })
 
         const useremail = await homeSchema.findOne({email:email})
             if(email === useremail.email){
-                res.render('login', {title: '', password:'',email:'Email is Already Exists '})
+                res.render('login', {title: 'Email is Already Exists'})
             }else{
-                console.log('Err')
+                console.log('User Wrong Input')
             }
 
         }else{
-            res.render('login',{title:'', password:'Password Not Match',email:''})
+            res.render('login',{title:'Password Not Match'})
         }
 
     }catch(error){
-        res.render('login',{title:'Please Fill all', password:'',email:''})
+        res.render('login',{title:'Please Fill all'})
     }
 })
 
 // Login
 Router.post('/login', async (req, res) => {
-    const user = await homeSchema.findOne({email:req.body.email})
+    const user = await homeSchema.findOne({email:req.body.email, password:req.body.password})
     if (!user)
         return res.redirect('/login')
     
@@ -92,5 +96,7 @@ Router.post('/login', async (req, res) => {
     session.user = {email:user.email}
     res.redirect('/home')
 })
+
+
 
 module.exports = Router;
