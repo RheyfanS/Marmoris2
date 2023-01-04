@@ -20,9 +20,33 @@
 <header class="header">
     <! logo icon>
     <a href="#" class="logo">
-        <img src="gambar/banteng.png" alt="">
+        <img src="gambar/logo.jpg" alt="">
     </a>
     <div class="nama">Màrmoris</div>
+
+    <!-- item in cart-->  
+    <div class="cart-box">    
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart fa-3x"></i>
+          <form align="right" name="form1" method="post" action="/logout?_method=DELETE">
+            <label class="logoutLblPos">
+            <input name="submit2" type="submit" id="submit2" value="log out">
+            </label>
+        </form> 
+        </div>
+        <div class="whole-cart-window hide">
+          <div class="cart-wrapper">
+          </div>
+          <div class="subtotal">Subtotal: $0.00</div>
+          <div class="checkout">
+            <a href="checkout">Booking</a>
+          </div>
+        </div>
+      </div>
+      <!-- <form method="POST" action="/logout?_method=DELETE" class="btn" >
+        <button>Logout</button>
+     </form> -->
+      <!-- item in cart-->
 
     <!--ini buat isi dari navbar-->
     <nav class="navbar"> 
@@ -30,25 +54,9 @@
         <a href="#menu">Venue</a>
         <a href="#products">Our product</a>
         <a href="#review">review</a>
-        <a href="#contact">contact</a>
-        <a href="#about">About</a>
+        <a href="#contact">Office</a>
         <a href="#blogs">blogs</a>
-        <!-- item in cart-->  
-        <div class="cart-box">    
-            <div class="cart-icon">
-              <i class="fas fa-shopping-cart fa-3x"></i> 
-            </div>
-            <div class="whole-cart-window hide">
-              <div class="cart-wrapper">
-              </div>
-              <div class="subtotal">Subtotal: $0.00</div>
-              <div class="checkout">Checkout</div>
-            </div>
-          </div>
-          <form method="POST" action="/logout?_method=DELETE" class="btn" >
-            <button>Logout</button>
-         </form>
-          <!-- item in cart-->
+        <a href="#about">About</a>
     </nav>
     
 
@@ -361,9 +369,8 @@
         </div>
 
         <div class="content">
-            <h3>Please choose us we needd money, pls?</h3>
-            <p>we need money <br> pls?</p>
-            <a href="#" class="btn">learn more</a>
+            <h3>Our Wedding Organizer Project</h3>
+            <p>Thank You<br> :)</p>
         </div>
 
     </div>
@@ -377,11 +384,11 @@
 <section class="footer">
 
     <div class="share">
-        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-facebook-f"></a>
-        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-twitter"></a>
-        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-instagram"></a>
-        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-linkedin"></a>
-        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-pinterest"></a>
+        <a href="https://www.facebook.com/rheyfan.syafdani/" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/RSyafdani" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/rheyfann.s/" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/rheyfan-syafdani-56aaaa252/" class="fab fa-linkedin"></a>
+        <a href="https://id.pinterest.com/rheyfansyafdani/" class="fab fa-pinterest"></a>
     </div>
 
     <div class="links">
@@ -389,9 +396,9 @@
         <a href="#menu">Venue</a>
         <a href="#products">Our product</a>
         <a href="#review">review</a>
-        <a href="#contact">contact</a>
-        <a href="#about">About</a>
+        <a href="#contact">Office</a>
         <a href="#blogs">blogs</a>
+        <a href="#about">About</a>
     </div>
 
     <div class="credit">dibuat oleh <span> Kelompok 2 </span> | all rights reserved</div>
